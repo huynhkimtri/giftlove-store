@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Light.ttf');
+    src: url('FileName.eot?#iefix') format('embedded-opentype'), url('FileName.woff') format('woff'), url('../font/Roboto-Light.ttf') format('truetype'), url('FileName.svg#FontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+.clearfix::after {
+    display: block;
+    clear: both;
+}
+
+
+/* check ============== */
+
+.menu-wrap {
+    width: 100%;
+    box-shadow: 1px 1px 25px 0px rgba(244, 87, 76, 0.8);
+    /* background: #ff0c5a;  */ 
+    display: inline-block;
+    /* margin: 5px 0px;	font-size: 18px; */
+}
+
+.menu {
+    width: 100%;
+    margin: auto;
+}
+
+.menu ul {
+    margin: auto;
+    width: 90%;
+}
+
+.menu li {
+    margin: 0;
+    list-style: none;
+    /* border-style: solid;
+				border-width: 0px 1px 0px 0px;
+				border-color: #E7E7E7; */
+    /* background-color: blue; */
+}
+
+.menu a {
+    /* trasition: all linear 0.15s; */
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    transition: 0.3s;
+    font-family: 'Roboto', serif;
+}
+
+.menu .current-item > a {
+    color: #d62317;
+    transition: 0.5s;
+
+}
+
+.menu .current-item>a:hover {
+    color: #d62317;
+    transform: scale(1.1);
+}
+
+.menu li:hover>a {
+    color: #d62317;
+    /* transform: scale(1.1); */
+    /* font-weight: bold; */
+}
+
+.menu .arrow {
+    font-size: 12px;
+    line-height: 0%;
+}
+
+.menu>ul>li {
+    float: left;
+    display: inline-block;
+    position: relative;
+    font-size: 19px;
+}
+
+.menu>ul>li>a {
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+
+/* .menu > ul > li:hover > a, .menu > ul > .current-item > a {
+background: #03C;
+} */
+
+.sub-menu {
+    width: 125%;
+    padding: 5px 0px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity linear 0.15s;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.menu li:hover .sub-menu {
+    z-index: 1;
+    opacity: 1;
+}
+
+.sub-menu li {
+    display: in-block;
+    font-size: 16px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.sub-menu li a {
+    padding: 10px 30px;
+    display: block;
+}
+
+.sub-menu li a:hover,
+.sub-menu .current-item a {
+    background: #fff;
+}
+
+.clearfix .icon {
+    display: none;
+}
+
+
+/* #searchbox {
+    background: #d8d8d8;
+    border: 4px solid #e8e8e8;
+    padding: 20px 10px;
+    width: 200px;
+}
+ */
+
+
+/* input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+} */
+
+
+/* #searchbox input {
+    outline: none;
+} */
+
+
+/* #searchbox input[type="text"] {
+    background: url(http://2.bp.blogspot.com/-xpzxYc77ack/VDpdOE5tzMI/AAAAAAAAAeQ/TyXhIfEIUy4/s1600/search-dark.png) no-repeat 10px 6px #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #bebebe;
+    width: 55%;
+    padding: 8px 15px 8px 30px;
+}
+ */
+
+#searchbox {
+    background: url(http://4.bp.blogspot.com/-u0fEq-zSTYI/VD1gGDLy3aI/AAAAAAAAAhw/im3bcQd5wBM/s1600/search-box.png) no-repeat;
+    height: 30px;
+    width: 220px;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+#searchbox input {
+    outline: none;
+}
+
+#searchbox input[type="text"] {
+    background: transparent;
+    margin: 0px 0px 0px 12px;
+    padding: 5px 0px 5px 0px;
+    border-width: 0px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    width: 77%;
+    color: #828282;
+    display: inline-table;
+    vertical-align: top;
+}
+
+#button-submit {
+    background-color: #f4574c;
+    /* background: url(http://2.bp.blogspot.com/-4OxjMRukhCM/VD1gBscpzII/AAAAAAAAAhk/TUxMSv7bCzA/s1600/search-button.png) no-repeat; */
+    border-width: 0px;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+}
+
+#button-submit:hover {
+    /* background: url(http://4.bp.blogspot.com/-GgNBTS_3FEA/VD1gBgm7RFI/AAAAAAAAAhg/flg6VijzW8E/s1600/search-button-hover.png) no-repeat; */
+}
+
+#button-submit::-moz-focus-inner {
+    border: 0;
+}

@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.product h2 {
+	margin: 0;
+	display: block;
+}
+article div.store div.active div.left{   
+	margin-top: 5px; 
+}
+article div.store div.active div.left img {
+	max-width: 100%;
+}
+div.right li {
+	color: #11f;
+	text-align: left;
+	font-size: 15px;
+	margin-bottom: 10px;
+	list-style-type: square;
+}
+div.right ul {
+	padding-left: 10%;
+}
+

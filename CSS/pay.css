@@ -1,0 +1,169 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('../font/Roboto-Light.ttf');
+	src: url('FileName.eot?#iefix') format('embedded-opentype'), url('FileName.woff') format('woff'), url('../font/Roboto-Light.ttf') format('truetype'), url('FileName.svg#FontName') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+header {
+	background-image: url("file:///E:/FPT_Univerity/PRO201/FinalProject/Images/background.png");
+}
+
+body {
+	font-family: 'Roboto';
+}
+
+.cart {
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color: #f1f1f1;
+}
+
+.cart-first {
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color: #f1f1f1;
+}
+
+.cart-infor input[type = text], input[type = date] {
+	width: 500px;
+	height: 30px;
+	padding: 12px 20px;	/* margin: 8px 0;	display: inline-block; */
+	margin-left: 10px;
+	vertical-align: top;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-size: 20px;
+	float: right;
+	margin-bottom: 10px;
+	box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2);
+	font-family: 'Roboto';
+}
+
+.cart-infor {
+	margin: auto;
+	width: 70%;
+}
+
+#tag_title {
+	top: 0;
+	border-bottom: 1px solid #535353;
+	margin-top: 0;
+}
+
+#tag_title h3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+select {
+	width: 500px;
+	padding: 12px 20px;
+	margin: 8px 0;	/* display: inline-block; */
+	vertical-align: top;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-size: 18px;
+	float: right;
+	box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2);
+	font-family: 'Roboto';
+}
+
+textarea {
+	width: 500px;
+	height: 120px;
+	padding: 12px 20px;	/* margin: 8px 0;	display: inline-block; */
+	margin-left: 10px;
+	vertical-align: top;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-size: 20px;
+	float: right;
+	margin-bottom: 10px;
+	box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2);
+	font-family: 'Roboto';
+}
+
+.bank-infor {
+	width: 80%;
+}
+
+.select-item {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 70%;
+	margin-left: 100px;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	text-align: justify;
+	padding-left: 30px;
+	padding-right: 30px;
+	box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2);
+	margin-top: 20px;
+}
+
+
+
+.cart-details {
+	margin-top: 123px;
+	border-radius: 10px;
+	background-color: #f1f1f1;
+}
+
+footer {
+	background-image: url("file:///E:/FPT_Univerity/PRO201/FinalProject/Images/background.png");
+	font-family: 'Roboto';
+}
+
+input[type = submit] {
+	width: 24%;
+	height: 50px;
+	margin: auto;
+	color: #fff;
+	padding: 10px;
+	background-color: #f4574c;
+	border-radius: 40px;
+	font-size: 16px;
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+input[type = button] {
+	width: 22%;
+	height: 50px;
+	margin: 20px;
+	color: #fff;
+	padding: 10px;
+	background-color: #f4574c;
+	border-radius: 40px;
+	font-size: 18px;
+	display: inline-block;
+	font-family: 'Roboto';
+}
+
+#div-submit {
+	text-align: center;
+}
+
+option {
+	font-family: 'Roboto';
+}

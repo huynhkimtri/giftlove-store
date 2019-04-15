@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Thanh Toán - Shop hoa TP.HCM Gift Love - Quà Tặng Yêu Thương</title>
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script|Lobster|Playfair+Display" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100i,300i,400" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+		<link rel="shortcut icon" href="Images/shortcut_icon.png" type="image/x-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+		<link rel="stylesheet" type="text/css" href="CSS/DropdownMenu.css">
+		<link rel="stylesheet" type="text/css" href="CSS/Responsive.css">
+		<link rel="stylesheet" type="text/css" href="CSS/pay.css">
+		<script src="JS/menu.js"></script>
+		<script src="JS/checkMail.js"></script>
+		<script src="JS/showDetails.js"></script>
+		<script src="JS/checkValidate.js"></script>
+		<script src="JS/productDraft.js"></script>
+		<!-- <script src="JS/loadPopUp.js"></script> -->
+	</head>
+	<body>
+	<header><img src="Images/logo_giftlove.png" alt="Header" title="Gift Love - Quà Tặng Yêu Thương"></header>
+	<div class="menu-wrap">
+		<nav class="menu">
+			<ul class="clearfix" id="navigation">
+				<li><a href="index.html" title="Trang Chủ Gift Love"><i class="fas fa-home"></i> Trang chủ</a></li>
+				<li>
+                    <a href="productsDraft.html">Sản phẩm <span class="arrow">&#9660;</span></a>
+                    <ul class="sub-menu">
+                        <li><a href="products_5.html">Hoa sinh nhật</a></li>
+                        <li><a href="products_6.html">Hoa cưới</a></li>
+                        <li><a href="#">Hoa tình yêu</a></li>
+                        <li><a href="#">Hoa khai trương</a></li>
+                        <li><a href="#">Hoa tặng mẹ</a></li>
+                        <li><a href="#">Hộp quà tặng</a></li>
+                    </ul>
+                </li>
+                <li><a href="products_2.html">Hoa tươi</a></li>
+                <li><a href="products_3.html">Hoa đặc biệt</a></li>
+                <li><a href="products_4.html">Hoa biết ơn</a></li>
+                <li><a href="News.html">Blog hoa</a></li>
+                <li><a href="Contact.html">Liên hệ</a></li>
+                <li><a href="About.html">Về chúng tôi</a></li>
+                <li class="current-item"><a href="cart.html">Giỏ hàng</a></li>
+				<li><a href="#" onclick="document.getElementById('login_form').style.display='block'">Đăng nhập</a></li>
+				<li class="icon"><a href="#" onclick="showMenu()">&equiv;</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- Login Form -->
+	<div id="login_form" class="modal_login_form">
+        <form class="modal_login_form_content animate" action="Contact_submit" method="get" accept-charset="utf-8">
+            <div class="formContainer">
+                <div class="imgContainer">
+                    <span onclick="document.getElementById('login_form').style.display='none'" class="close" title="Đóng">&times;</span>
+                    <img src="Images/logo_giftlove.png" alt="" class="avatar_login">
+                </div>
+                
+                <label for="username"><b>Tên đăng nhập</b></label>
+                <input type="text" name="username" placeholder="Nhập tên đăng nhập">
+                <label for="password"><b>Mật khẩu</b></label>
+                <input type="password" name="password" placeholder="Nhập mật khẩu">
+                <button type="submit">Đăng nhập</button>
+                <label><input type="checkbox" name="remember" checked="checked">Nhớ mật khẩu</label>
+                <input type="button" name="" value="Đăng kí" onclick="document.getElementById('signup_form').style.display='block'">
+                
+            </div>
+            <div class="formContainer">
+                <button type="button" class="cancel_button" onclick="document.getElementById('login_form').style.display: 'none';">Huỷ bỏ</button>
+                <span class="forget_password">Quên<a href="#"> mật khẩu?</a></span>
+            </div>
+            
+        </form>
+    </div>
+
+	<div class="row">
+		<article class="col-8 col-m-12">
+			<h2>THANH TOÁN</h2>
+			<p>Nếu đã có tài khoản vui lòng <a href="#" onclick="document.getElementById('login_form').style.display='block'">Đăng nhập</a></p>
+			<div class="col-12 col-m-12 cart-first">
+				<div id="tag_title">
+					<h3>ĐIỀN THÔNG TIN</h3>
+				</div>
+				<div class="cart-infor">
+					<h4>THÔNG TIN QUÝ KHÁCH</h4>
+					<p><b>Họ và tên</b><input id="input-name" class="inputTextToSave" type="text" name="" placeholder=""><br></p>
+					<p><label for=""><b>Email:</b></label><input id="input-mail" class="inputTextToSave" type="text" name="" placeholder=""><br></p>
+					
+					<p><label for=""><b>Số điện thoại:</b></label><input id="input-phone" class="inputTextToSave" type="text" name="" placeholder=""><br></p>
+					
+					<p><label for=""><b>Địa chỉ:</b></label><input id="input-add" class="inputTextToSave" type="text" name="" placeholder=""><br></p>
+					<p><input id="checkbox" class="inputTextToSave" type="checkbox" name="checkbox"  onclick="showCheckBox()"><label for="">Quý khách là người nhận</label></p>
+					<div id="infor-receiver">
+						<h4>THÔNG TIN NGƯỜI NHẬN</h4>
+					<p><label for=""><b>Họ và tên:</b></label><input class="inputTextToSave" type="text" name="" placeholder=""><br></p>
+					<p><label for=""><b>Email:</b></label><input class="inputTextToSave" type="text" name="" placeholder=""><br></p>
+					<p><label for=""><b>Số điện thoại:</b></label><input class="inputTextToSave" type="text" name="" placeholder=""><br></p>
+					<p><label for=""><b>Địa chỉ:</b></label><input class="inputTextToSave" type="text" name="" placeholder=""></p>
+					</div>
+					
+					<h4>THÔNG ĐIỆP VÀ LỜI NHẮN</h4>
+					<p>
+						<label for=""><b>Thiệp gửi tặng cho:</b></label>
+						<select name="" class="inputTextToSave">
+							<option value="0">Vui lòng chọn</option>
+							<option value="1">Bạn bè - Friends</option>
+							<option value="2">Chồng - Husband</option>
+							<option value="3">Vợ - Wife</option>
+							<option value="4">Đồng nghiệp - Co-worker</option>
+							<option value="5">Bố mẹ - Parent</option>
+							<option value="6">Đối tác, khách hàng - Partner</option>
+							<option value="7">Người yêu - Lover</option>
+							<option value="8">Anh, chị, em - Brother, Sister</option>
+							<option value="9">Đặt giúp người khác - Not me</option>
+							<option value="10">Khác - Others</option>
+						</select>
+					</p>
+					<p>
+						<label for=""><b>Nhân dịp:</b></label>
+						<select name="" class="inputTextToSave">
+							<option value="0">Sinh nhật - Birthday</option>
+							<option value="1">Ngày kỉ niệm - Anniversary</option>
+							<option value="2">Làm quen - Dating</option>
+							<option value="3">Khai trương - Grand openings</option>
+							<option value="4">Chúc mừng - Congratulations</option>
+							<option value="5">Chia buồn - Sympathy</option>
+							<option value="6">Cảm ơn - Thankyou</option>
+							<option value="7">Ngày lễ - Holidays day</option>
+							<option value="8">Xin lỗi - Sorry</option>
+							<option value="9">Khác - Others</option>
+						</select>
+					</p>
+					<p>
+						<label for=""><b>Lời nhắn:</b></label><textarea class="inputTextToSave" name=""></textarea>
+					</p>
+				</div>
+			</div>
+			<div class="col-12 col-m-12 cart">
+				<div id="tag_title">
+					<h3>NGÀY GIAO HÀNG</h3>
+				</div>
+				<div class="cart-infor">
+					<p><label for=""><b>Ngày giao hàng</b></label><input class="inputTextToSave" type="date"></p>
+					<p><label for=""><b>Giờ giao hàng</b></label>
+					<select class="inputTextToSave" name="">
+						<option value="0">Giờ giao hàng</option>
+						<option value="1">Trước 8:00</option>
+						<option value="2">8:00 - 12:00</option>
+						<option value="3">12:00 - 17:00</option>
+						<option value="4">Sau 17:00</option>
+					</select></p>
+				</div>
+				
+			</div>
+			<div class="col-12 col-m-12 cart">
+				<div id="tag_title">
+					<h3>PHƯƠNG THỨC THANH TOÁN</h3>
+				</div>
+				<div class="select-item">
+					<input type="radio" name="radio" checked="checked" value="" placeholder="" onclick="showDetails('infor-1','infor-2', 'infor-3', 'infor-4')"><span class="checkmark" ></span><label>Thanh toán tiền mặt khi nhận hàng</label>
+					<div class="information" style="display: none" id="infor-1">
+						<p>Trong trường hợp quý khách là người đặt hàng cũng như là người nhận hàng.</p>
+					</div>
+				</div>
+				<div class="select-item">
+					<input type="radio" name="radio" value="" placeholder="" onclick="showDetails('infor-2','infor-1', 'infor-3', 'infor-4')"><span class="checkmark"></span><label>Thanh toán chuyển khoản qua ngân hàng</label>
+					<div class="information" style="display: none" style="display: none" id="infor-2">
+						<p>Bạn đến bất kỳ ngân hàng nào ở Việt Nam để chuyển tiền theo thông tin bên dưới (bạn không nhất thiết phải có tài khoản ngân hàng).</p>
+						<div class="bank-infor">
+							<div class="img">
+								<img src="Images/VCB.png" title="Chuyển khoản qua tài khoản Ngân hàng Vietcombank">
+							</div>
+							<div class="acc-infor">
+								<p><b>Ngân hàng TMCP Ngoại Thương Việt Nam</b></p>
+								<p>Chi nhánh Tp.Hồ Chí Minh</p>
+								<p><strong>Chủ tài khoản:</strong> Huỳnh Kim Trí</p>
+								<p><strong>Số tài khoản:</strong> xxxx xxxx xxxx xxxx</p>
+							</div>
+						</div>
+						<div class="bank-infor">
+							<div class="img">
+								<img src="Images/techcombank.png" title="Chuyển khoản qua tài khoản Ngân hàng Techcombank">
+							</div>
+							<div class="acc-infor">
+								<p><b>Ngân hàng TMCP Kỹ Thương Việt Nam</b></p>
+								<p>Chi nhánh Tp.Hồ Chí Minh</p>
+								<p><strong>Chủ tài khoản:</strong> Huỳnh Kim Trí</p>
+								<p><strong>Số tài khoản:</strong> xxxx xxxx xxxx xxxx</p>
+							</div>
+						</div>
+						<div class="bank-infor">
+							<div class="img">
+								<img src="Images/acb.png" title="Chuyển khoản qua tài khoản Ngân hàng ACB">
+							</div>
+							<div class="acc-infor">
+								<p><b>Ngân hàng TMCP Á Châu</b></p>
+								<p>Chi nhánh Tp.Hồ Chí Minh</p>
+								<p><strong>Chủ tài khoản:</strong> Huỳnh Kim Trí</p>
+								<p><strong>Số tài khoản:</strong> xxxx xxxx xxxx xxxx</p>
+							</div>
+						</div>
+						<div class="bank-infor">
+							<div class="img">
+								<img src="Images/sacombank.png" title="Chuyển khoản qua tài khoản Ngân hàng Sacombank">
+							</div>
+							<div class="acc-infor">
+								<p><b>Ngân hàng TMCP Sài Gòn Thương Tín</b></p>
+								<p>Chi nhánh Tp.Hồ Chí Minh</p>
+								<p><strong>Chủ tài khoản:</strong> Huỳnh Kim Trí</p>
+								<p><strong>Số tài khoản:</strong> xxxx xxxx xxxx xxxx</p>
+							</div>
+						</div>
+						<div class="bank-infor">
+							<div class="img">
+								<img src="Images/vietinbank.png" title="Chuyển khoản qua tài khoản Ngân hàng Vietinbank">
+							</div>
+							<div class="acc-infor">
+								<p><b>Ngân hàng TMCP Công Thương Việt Nam</b></p>
+								<p>Chi nhánh Tp.Hồ Chí Minh</p>
+								<p><strong>Chủ tài khoản:</strong> Huỳnh Kim Trí</p>
+								<p><strong>Số tài khoản:</strong> xxxx xxxx xxxx xxxx</p>
+							</div>
+						</div>
+						<div class="bank-infor">
+							<div class="img">
+								<img src="Images/vib.png" title="Chuyển khoản qua tài khoản Ngân hàng VIB">
+							</div>
+							<div class="acc-infor">
+								<p><b>Ngân hàng VIB</b></p>
+								<p>Chi nhánh Tp.Hồ Chí Minh</p>
+								<p><strong>Chủ tài khoản:</strong> Huỳnh Kim Trí</p>
+								<p><strong>Số tài khoản:</strong> xxxx xxxx xxxx xxxx</p>
+							</div>
+						</div>
+						<div class="bank-infor">
+							<div class="img">
+								<img src="Images/bidv.png" title="Chuyển khoản qua tài khoản Ngân hàng BIDV">
+							</div>
+							<div class="acc-infor">
+								<p><b>Ngân hàng BIDV</b></p>
+								<p>Chi nhánh Tp.Hồ Chí Minh</p>
+								<p><strong>Chủ tài khoản:</strong> Huỳnh Kim Trí</p>
+								<p><strong>Số tài khoản:</strong> xxxx xxxx xxxx xxxx</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="select-item">
+					<input type="radio" name="radio" value="" placeholder="" onclick="showDetails('infor-3','infor-2', 'infor-1', 'infor-4')"><span class="checkmark"></span><label>Thanh toán Online</label>
+					<div class="information" style="display: none" style="display: none" id="infor-3">
+						<p>Thanh toán bằng (Internet Banking, ATM, Visa, Master) qua VTC Pay.</p>
+					</div>
+				</div>
+				<div class="select-item">
+					<input type="radio" name="radio" value="" placeholder="" onclick="showDetails('infor-4','infor-2', 'infor-3', 'infor-1')"><span class="checkmark"></span><label>Thanh toán ở địa chỉ khác</label>
+					<div class="information" style="display: none" style="display: none" id="infor-4">
+						<p>Shop có hỗ trợ giao hoa địa chỉ này , thu tiền ở địa chỉ khác, nhưng có tính phí (ship) tùy theo khu vực (20,000 - 50,000). Quý khách vui lòng liên hệ nhân viên tư vấn để biết giá ship.</p>
+					</div>
+				</div>
+				<div class="col-12 col-m-12" id="div-submit">
+				
+				<input type="button" name="" onclick="back2Cart()" value="TRỞ LẠI GIỎ HÀNG">
+				<input type="submit" name="" value="HOÀN TẤT THANH TOÁN" onclick="return checkoutSubmit()">
+			</div>
+			</div>
+			
+		</article>
+		<aside class="col-4 col-m-12 cart-details">
+			<!-- <div id="tag_title">
+				<h3>THÔNG TIN ĐƠN HÀNG</h3>
+			</div> -->
+		</aside>
+	</div>
+	<!-- Footer -->
+	<footer class="col-12">
+		<div class="list col-3 col-m-4">
+			<ul>
+				<li>CHÚNG TÔI</li>
+				<li>Giới thiệu</li>
+				<li>Tuyển dụng</li>
+				<li>Tin tức</li>
+				<li>Ưu đãi thành viên</li>
+				<li>Giờ hoạt động</li>
+				<li>Các dịch vụ cung cấp</li>
+			</ul>
+		</div>
+		<div class="list col-3 col-m-4">
+			<ul>
+				<li>CHÍNH SÁCH BÁN HÀNG</li>
+				<li>Thắc mắc và khiếu nại</li>
+				<li>Hướng Dẫn Đặt Hàng</li>
+				<li>Hướng dẫn thanh toán</li>
+				<li>Phí Giao Hàng</li>
+				<li>Chính sách giao hàng</li>
+				<li>Chính sách bảo mật</li>
+			</ul>
+		</div>
+		<div class="list col-3 col-m-4">
+			<ul>
+				<li><img src="Images/logo_giftlove.png" alt="GiftLove" title="GiftLove"></li>
+				<li>Điện thoại: 0163 214 9696 (Zalo)</li>
+				<li>Instagram: trihuynh__</li>
+				<li>Email: trihkse63285@fpt.edu.vn</li>
+				<li>Nhà Riêng : 41/2B Tô Kí P.Trung Mỹ Tây Q.12 TP.HCM</li>
+			</ul>
+		</div>
+		<div class="list col-3 col-m-12">
+			<!-- Social Icon --> 
+			<div class="social_icon">
+				<ul>
+					<li><a href="https://www.instagram.com/trihuynh_/?hl=en" title="Instagram Giftlove" target="_blank"><img src="Images/ig.png" alt=""></a></li>
+					<li><a href="https://www.facebook.com/" title="Fanpage Giftlove"><img src="Images/facebook.png" alt=""></a></li>
+					<li><a href="https://www.youtube.com/" title="Youtube Giftlove"><img src="Images/youtube.png" alt=""></a></li>
+					<li><a href="#" title="Messeage"><img src="Images/mes.png" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			<p>&copy; Copyright 2018 by Shop hoa GiftLove - All rights reserved. Thiết kế web: Huỳnh Kim Trí</p>
+    </footer>
+		</footer>
+	</body>
+</html>

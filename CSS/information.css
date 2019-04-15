@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/* CSS Document */
+.product {
+	overflow: hidden;
+}
+
+[class*="information-"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: rgba(10, 10, 10, 0.6);
+	display: none;	/* animation */
+	-webkit-animation-duration: 0.25s;
+	-webkit-animation-timing-function: ease-out;
+	animation-duration: 0.25s;
+	animation-timing-function: ease-out;
+}
+
+.information-up {
+	-webkit-animation-name: moveUp;
+	animation-name: moveUp;
+}
+
+.information-topLeft {
+	-webkit-animation-name: topLeft;
+	animation-name: topLeft;
+}
+
+.information-topRight {
+	-webkit-animation-name: topRight;
+	animation-name: topRight;
+}
+
+.information-bottomLeft {
+	-webkit-animation-name: bottonLeft;
+	animation-name: bottomLeft;
+}
+
+.information-bottomRight {
+	-webkit-animation-name: bottomRight;
+	animation-name: bottomRight;
+}
+
+[class*="information-"] ul {
+	color: #F1F1F1;
+	font-size: 17px;
+	display: block;
+	margin: 0 auto;
+}
+
+[class*="information-"] ul li {
+	margin: 10px;
+}
+
+.product:hover [class*="information-"] {
+	display: block;
+}
+
+@-webkit-keyframes moveUp {
+	0% {
+		top: 100%;
+	}
+
+	100% {
+		top: 0%;
+	}
+
+}
+
+@keyframes moveUp {
+	0% {
+		top: 100%;
+	}
+
+	100% {
+		top: 0%;
+	}
+
+}
+
+@-webkit-keyframes topLeft {
+	0% {
+		top: -100%;
+		left: -100%;
+	}
+
+	100% {
+		top: 0;
+		left: 0;
+	}
+
+}
+
+@keyframes topLeft {
+	0% {
+		top: -100%;
+		left: -100%;
+	}
+
+	100% {
+		top: 0;
+		left: 0;
+	}
+
+}
+
+@-webkit-keyframes topRight {
+	0% {
+		top: -100%;
+		left: 100%;
+	}
+
+	100% {
+		top: 0;
+		left: 0;
+	}
+
+}
+
+@keyframes topRight {
+	0% {
+		top: -100%;
+		left: 100%;
+	}
+
+	100% {
+		top: 0;
+		left: 0;
+	}
+
+}
+
+@-webkit-keyframes bottomLeft {
+	0% {
+		top: 100%;
+		left: -100%;
+	}
+
+	100% {
+		top: 0;
+		left: 0;
+	}
+
+}
+
+@keyframes bottomLeft {
+	0% {
+		top: 100%;
+		left: -100%;
+	}
+
+	100% {
+		top: 0;
+		left: 0;
+	}
+
+}
+
+@-webkit-keyframes bottomRight {
+	0% {
+		top: 100%;
+		left: 100%;
+	}
+
+	100% {
+		top: 0;
+		left: 0;
+	}
+
+}
+
+@keyframes bottomRight {
+	0% {
+		top: 100%;
+		left: 100%;
+	}
+
+	100% {
+		top: 0;
+		left: 0;
+	}
+
+}

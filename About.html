@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Về chúng tôi - Shop hoa TP.HCM Gift Love - Quà Tặng Yêu Thương </title>
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script|Lobster|Playfair+Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300i,400" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link rel="shortcut icon" href="https://www.hoasaigon.com.vn/upload/images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/Style.css">
+        <link rel="stylesheet" type="text/css" href="CSS/DropdownMenu.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Responsive.css">
+        <link rel="stylesheet" type="text/css" href="CSS/SlideShow.css">
+        <script src="JS/menu.js"></script>
+    </head>
+    <body>
+    <header><img src="Images/logo_giftlove.png" alt="Header" title="Gift Love - Quà Tặng Yêu Thương"></header>
+    <div class="menu-wrap">
+        <nav class="menu">
+            <ul class="clearfix" id = "navigation">
+                <li><a href="index.html" title="Trang Chủ Gift Love"><i class="fas fa-home"></i> Trang chủ</a></li>
+                <li>
+                    <a href="productsDraft.html">Sản phẩm <span class="arrow">&#9660;</span></a>
+                    <ul class="sub-menu">
+                        <li><a href="products_5.html">Hoa sinh nhật</a></li>
+                        <li><a href="products_6.html">Hoa cưới</a></li>
+                        <li><a href="#">Hoa tình yêu</a></li>
+                        <li><a href="#">Hoa khai trương</a></li>
+                        <li><a href="#">Hoa tặng mẹ</a></li>
+                        <li><a href="#">Hộp quà tặng</a></li>
+                    </ul>
+                </li>
+                <li><a href="products_2.html">Hoa tươi</a></li>
+                <li><a href="products_3.html">Hoa đặc biệt</a></li>
+                <li><a href="products_4.html">Hoa biết ơn</a></li>
+                <li><a href="News.html">Blog hoa</a></li>
+                <li><a href="Contact.html">Liên hệ</a></li>
+                <li class="current-item"><a href="About.html">Về chúng tôi</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="#" onclick="document.getElementById('login_form').style.display='block'">Đăng nhập</a></li>
+                <li class="icon"><a href="#" onclick="showMenu()">&equiv;</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Login Form -->
+    <div id="login_form" class="modal_login_form">
+        <form class="modal_login_form_content animate" action="Contact_submit" method="get" accept-charset="utf-8">
+            <div class="formContainer">
+                <div class="imgContainer">
+                    <span onclick="document.getElementById('login_form').style.display='none'" class="close" title="Đóng">&times;</span>
+                    <img src="Images/logo_giftlove.png" alt="" class="avatar_login">
+                </div>
+                
+                <label for="username"><b>Tên đăng nhập</b></label>
+                <input type="text" name="username" placeholder="Nhập tên đăng nhập">
+                <label for="password"><b>Mật khẩu</b></label>
+                <input type="password" name="password" placeholder="Nhập mật khẩu">
+                <button type="submit">Đăng nhập</button>
+                <label><input type="checkbox" name="remember" checked="checked">Nhớ mật khẩu</label>
+                <input type="button" name="" value="Đăng kí" onclick="document.getElementById('signup_form').style.display='block'">
+                
+            </div>
+            <div class="formContainer">
+                <button type="button" class="cancel_button" onclick="document.getElementById('login_form').style.display: 'none';">Huỷ bỏ</button>
+                <span class="forget_password">Quên<a href="#"> mật khẩu?</a></span>
+            </div>
+            
+        </form>
+    </div>
+
+    <div class="row">
+        <article class="col-8 col-m-12">
+            <div class="col-12 articleColor">
+                <h2>SHOP HOA TƯƠI GIFTLOVE</h2>
+                
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="Images/image_1.png" style="width:100%">
+                        <div class="text">Hoa Giỏ</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="Images/image_2.png" style="width:100%">
+                        <div class="text">Hoa Cắm Hộp Gỗ</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="Images/image_3.png" style="width:100%">
+                        <div class="text">Hoa Hội Thảo</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="Images/image_4.png" style="width:100%">
+                        <div class="text">Hoa Sinh Nhật</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="Images/image_5.png" style="width:100%">
+                        <div class="text">Hoa Cưới Cầm Tay</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="Images/image_7.png" style="width:100%">
+                        <div class="text">Hoa Tang Lễ - Hoa Viếng</div>
+                    </div>
+                    <!--  <div class="slide fade">
+                        <img src="Images/slide07.jpg" style="width:100%">
+                        <div class="text">Dragunov Sniper Rifle</div>
+                    </div> -->
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br/>
+                
+                <div style="text-align:center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <!--  <span class="dot" onclick="currentSlide(7)"></span> -->
+                </div>
+                <br/>
+                
+                <script src="JS/SlideShow.js"></script>
+                
+                <p class="articleContent">Cùng với sự phát triển của nền kinh tế, con người ngày càng bộn bề với trăm công nghìn việc, chúng ta không có nhiều thời gian cho việc tìm kiếm, chọn lựa hay mua sắm những món quà có ý nghĩa cho những người thân yêu.
+                Chắc hẳn các bạn đã không ít lần phải suy nghĩ, băn khoăn khi muốn tặng cho ai đó một món quà sao cho độc đáo mới lạ và quan trọng là phải mang  thật nhiều ý nghĩa. </p><br/>
+                <p class="articleContent">“Tặng quà là một nghệ thuật, giá trị không ở món quà mà là ở cách tặng”. Vậy bạn phải làm thế nào để người nhận, cảm nhận hết tình cảm của bạn dành cho họ? Tình cảm yêu thương hay sự quan tâm đâu chỉ thể hiện bằng lời? Hiểu được điều đó nên Hoa Tươi Tường An luôn trân trọng và muốn chia sẻ cùng bạn những tâm tư và tình cảm chân thành mà bạn muốn dành tặng cho người thân.</p><br/>
+                <p class="articleContent">Chúng tôi sẽ mang những sắc hoa tươi thắm nhất, những món quà ý nghĩa nhất đến với người thân yêu của bạn trên khắp mọi miền, khoảng cách về không gian và thời gian không còn là vấn đề nữa. Dù bạn đang ở đâu chỉ cần 1 thao tác click “chuột” , hoặc 1 cuộc điện thoại, Bạn sẽ hoàn toàn yên tâm để chúng tôi có thể thay bạn mang đến niềm vui cho những người thân yêu, bạn bè, đối tác,,…của bạn.Cũng chỉ một thao tác bạn đã có một bó hoa tươi thắm, một giỏ trái cây tươi mới thể hiện sự quan tâm, chăm sóc … hay một bức thiệp xinh xắn cùng những lời chúc ngọt ngào dành tặng người thân, những người đặc biệt mà không phải tốn nhiều chi phí, thời gian , không phải lo lắng bạn đang ở xa. Chúng tôi cũng luôn chú trọng quan tâm đến các văn phòng, công sở, đặc biệt sẽ có giá ưu đãi cho những cơ quan đặt hoa theo định kì dài hạn, hoặc làm hoa cho hội nghị, hội thảo, những ngày lễ lớn của quý công ty.</p><br>
+                <p class="articleContent">Triết lí kinh doanh của Hoa Tươi Tường An là mang lại cho quý khách sự hài lòng hơn cả sự mong đợi, bằng chất lượng sản phẩm và dịch vụ tốt, sự ân cần chu đáo của đội ngủ nhân viên năng động và trẻ trung.</p><br>
+                <p class="articleContentBottom">HÃY LIÊN LẠC VỚI CHÚNG TÔI ĐỂ ĐƯỢC CHIA SẺ VÀ CHĂM SÓC NHỮNG ĐIỀU QUAN TÂM CỦA CÁC BẠN VỚI MỌI NGƯỜI Ở KHẮP NƠI MÀ KHÔNG TỐN NHIỀU THỜI GIAN VÀ MỨC CHI PHÍ HỢP LÍ. <br><a href="index.html">HOA TƯƠI GIFTLOVE</a> LUÔN TƯ VẤN VÀ THIẾT KẾ HOA THEO YÊU CẦU CỦA QUÝ KHÁCH. CHÂN THÀNH CẢM ƠN QUÝ KHÁCH HÀNG ĐÃ TIN TƯỞNG GIFTLOVE.</p>
+            </div>
+            
+        </article>
+        
+        <aside class="col-4 col-m-12">
+            <div class="heading">
+                <p>Địa chỉ Shop hoa GiftLove</p>
+            </div>
+            <div id="googleMap1" style="width: 90%; height: 300px; margin: 10px auto;"></div>
+            <div class="heading">
+                <p>Địa chỉ hiện tại của bạn</p>
+            </div>
+            <div id="googleMap2" style="width: 90%; height: 300px; margin: 10px auto;"></div>
+            <script>
+                var latitude = 0;
+                var longitude = 0;
+                function setPosition(position) {
+                    latitude = position.coords.latitude;
+                    longitude = position.coords.longitude;
+                    myMap2();
+                }
+                function getLocation() {
+                    if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(setPosition);
+                } else {
+                // browser not support geolocation
+                }
+                }
+                function myMap() {
+                    var myCenter1 = new google.maps.LatLng(10.8538976,106.6247209);
+                    var mapCanvas1 = document.getElementById("googleMap1");
+                    var mapOptions1 = {center: myCenter1, zoom: 14};
+                    var map1 = new google.maps.Map(mapCanvas1, mapOptions1);
+                    var marker1 = new google.maps.Marker({position:myCenter1, animation: google.maps.Animation.BOUNCE});
+                    marker1.setMap(map1);
+                }
+                getLocation();
+                function myMap2() {
+                    var myCenter2 = new google.maps.LatLng(latitude,longitude);
+                    var mapCanvas2 = document.getElementById("googleMap2");
+                    var mapOptions2 = {center: myCenter2, zoom: 14};
+                    var map2 = new google.maps.Map(mapCanvas2, mapOptions2);
+                    var marker2 = new google.maps.Marker({
+                    position:myCenter2,
+                    animation: google.maps.Animation.BOUNCE
+                });
+                marker2.setMap(map2);
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeo79qGvwKUkpdxMz9KMj42GW1A_HFJ-I&callback=myMap"></script>
+        </aside>
+    </div>
+    
+    <footer class="col-12">
+        <div class="list col-3 col-m-4">
+            <ul>
+                <li>CHÚNG TÔI</li>
+                <li><i class="fa fa-angle-double-right"></i> Giới thiệu</li>
+                <li><i class="fa fa-angle-double-right"></i> Tuyển dụng</li>
+                <li><i class="fa fa-angle-double-right"></i> Tin tức</li>
+                <li><i class="fa fa-angle-double-right"></i> Ưu đãi thành viên</li>
+                <li><i class="fa fa-angle-double-right"></i> Giờ hoạt động</li>
+                <li><i class="fa fa-angle-double-right"></i> Các dịch vụ cung cấp</li>
+            </ul>
+        </div>
+        <div class="list col-3 col-m-4">
+            <ul>
+                <li>CHÍNH SÁCH BÁN HÀNG</li>
+                <li><i class="fa fa-angle-double-right"></i> Thắc mắc và khiếu nại</li>
+                <li><i class="fa fa-angle-double-right"></i> Hướng Dẫn Đặt Hàng</li>
+                <li><i class="fa fa-angle-double-right"></i> Hướng dẫn thanh toán</li>
+                <li><i class="fa fa-angle-double-right"></i> Phí Giao Hàng</li>
+                <li><i class="fa fa-angle-double-right"></i> Chính sách giao hàng</li>
+                <li><i class="fa fa-angle-double-right"></i> Chính sách bảo mật</li>
+            </ul>
+        </div>
+        <div class="list col-3 col-m-4">
+            <ul>
+                <li><img src="Images/logo_giftlove.png" alt="GiftLove" title="GiftLove"></li>
+                <li><i class="fa fa-angle-double-right"></i> Điện thoại: 0163 214 9696 (Zalo)</li>
+                <li><i class="fa fa-angle-double-right"></i> Instagram: trihuynh__</li>
+                <li><i class="fa fa-angle-double-right"></i> Email: trihkse63285@fpt.edu.vn</li>
+                <li><i class="fa fa-angle-double-right"></i> Nhà Riêng : 41/2B Tô Kí P.Trung Mỹ Tây Q.12 TP.HCM</li>
+            </ul>
+        </div>
+        <div class="list col-3 col-m-12">
+            <div class="social_icon">
+                <ul>
+                    <li><a href="https://www.instagram.com/trihuynh_/?hl=en" title="Instagram Giftlove" target="_blank"><img src="Images/ig.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/" title="Fanpage Giftlove"><img src="Images/facebook.png" alt=""></a></li>
+                    <li><a href="https://www.youtube.com/" title="Youtube Giftlove"><img src="Images/youtube.png" alt=""></a></li>
+                    <li><a href="#" title="Messeage"><img src="Images/mes.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>&copy; Copyright 2018 by Shop hoa GiftLove - All rights reserved. Thiết kế web: Huỳnh Kim Trí</p>
+        </footer>
+    </body>
+</html>

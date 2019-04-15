@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://www.hoasaigon.com.vn/upload/images/favicon.png" type="image/x-icon">
+        <title>Sản phẩm hoa tươi - Shop hoa TP.HCM Gift Love - Quà Tặng Yêu Thương</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=vietnamese" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/Style.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style_2.css">
+        <link rel="stylesheet" type="text/css" href="CSS/DropdownMenu.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Product.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Responsive.css">
+        <link rel="stylesheet" type="text/css" href="CSS/information.css">
+        <link rel="stylesheet" type="text/css" href="CSS/productDraft.css">
+        <script src="JS/menu.js"></script>
+        <script src="JS/products_2.js"></script>
+    </head>
+    <body onscroll="showHidden()" onload="displayProducts()">
+    <header><img src="Images/logo_giftlove.png" alt="Header" title="Gift Love - Quà Tặng Yêu Thương"></header>
+    <div id="giohang_button"><a href="cart.html" title="Giỏ hàng của bạn"></a></div>
+        <input type="button" value="" onclick="hengio()" id="hidden_button" />
+        <script>
+            var id; //ma dong ho hen gio
+        
+        function truotLen(){
+        //lay vi tri hien hanh
+        var y = window.pageYOffset;
+        y = y - 50;
+        if(y <= 0) window.clearInterval(id);
+        window.scrollTo(0,y);
+        //set time out, hen gio de chay 1 lan, set interval de lap di lap lai.
+        }
+        
+        function hengio(){
+        id = window.setInterval(truotLen, 1);
+        }
+            function showHidden(){
+        var y = window.pageYOffset;
+        if(y > 300) {
+        var d = document.getElementById("hidden_button");
+        d.style.display="block" ;
+        } else {
+        var d = document.getElementById("hidden_button");
+        d.style.display="none";
+        }
+        var side_nav = window.pageYOffset;
+        if(side_nav > 300) {
+        var s = document.getElementById("mySidenav");
+        s.style.marginLeft="-500px";
+        s.style.transition = "1s";
+        } else {
+        var s = document.getElementById("mySidenav");
+        s.style.marginLeft="0px";
+        s.style.transition="1s";
+        }
+        }
+        </script>
+    <div class="menu-wrap">
+        <nav class="menu">
+            <ul class="clearfix" id="navigation">
+                <li><a href="index.html" title="Trang Chủ Gift Love"><i class="fas fa-home"></i> Trang chủ</a></li>
+                <li>
+                    <a href="productsDraft.html">Sản phẩm <span class="arrow">&#9660;</span></a>
+                    <ul class="sub-menu">
+                        <li><a href="products_5.html">Hoa sinh nhật</a></li>
+                        <li><a href="products_6.html">Hoa cưới</a></li>
+                        <li><a href="#">Hoa tình yêu</a></li>
+                        <li><a href="#">Hoa khai trương</a></li>
+                        <li><a href="#">Hoa tặng mẹ</a></li>
+                        <li><a href="#">Hộp quà tặng</a></li>
+                    </ul>
+                </li>
+                <li><a href="products_2.html">Hoa tươi</a></li>
+                <li><a href="products_3.html">Hoa đặc biệt</a></li>
+                <li><a href="products_4.html">Hoa biết ơn</a></li>
+                <li><a href="News.html">Bloa hoa</a></li>
+                <li><a href="Contact.html">Liên hệ</a></li>
+                <li><a href="About.html">Về chúng tôi</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="#" onclick="document.getElementById('login_form').style.display='block'">Đăng nhập</a></li>
+                <li class="icon"><a href="#" onclick="showMenu()">&equiv;</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Login Form -->
+    <div id="login_form" class="modal_login_form">
+        <form class="modal_login_form_content animate" action="Contact_submit" method="get" accept-charset="utf-8">
+            <div class="formContainer">
+                <div class="imgContainer">
+                    <span onclick="document.getElementById('login_form').style.display='none'" class="close" title="Đóng">&times;</span>
+                    <img src="Images/logo_giftlove.png" alt="" class="avatar_login">
+                </div>
+                
+                <label for="username"><b>Tên đăng nhập</b></label>
+                <input type="text" name="username" placeholder="Nhập tên đăng nhập">
+                <label for="password"><b>Mật khẩu</b></label>
+                <input type="password" name="password" placeholder="Nhập mật khẩu">
+                <button type="submit">Đăng nhập</button>
+                <label><input type="checkbox" name="remember" checked="checked">Nhớ mật khẩu</label>
+                <input type="button" name="" value="Đăng kí" onclick="document.getElementById('signup_form').style.display='block'">
+                
+            </div>
+            <div class="formContainer">
+                <button type="button" class="cancel_button" onclick="document.getElementById('login_form').style.display: 'none';">Huỷ bỏ</button>
+                <span class="forget_password">Quên<a href="#"> mật khẩu?</a></span>
+            </div>
+            
+        </form>
+    </div>
+    
+
+    <div class="row">
+        <article class="col-8 col-m-12">
+            <h2>SẢN PHẨM HOA TƯƠI</h2>
+            <div class="store" id="list_products">
+            </div>
+            <div id="detail_wrap">
+                <div id="details" class="animate">
+                    <div id="image_wrap">
+                        <img id="product_image" src="" alt="">
+                    </div>
+                    
+                    <div id="product_infor">
+
+                    </div>
+                    <input type="button" name="" value="Thêm vào giỏ hàng" onclick="addProduct('product_image')">
+                    <input type="button" name="" value="0164 321 9696" placeholder="Liên hệ với chúng tôi">
+                    <span onclick="closeDetail()" class="close_detail" title="Đóng">&times;</span>
+                </div>
+            </div>
+            
+            
+        </article>
+        
+        <aside class="col-4 col-m-12">
+            <div class="heading">
+                <a href="#">Hoa và Cuộc sống</a>
+            </div>
+            <div class="news">
+                <h4>Những lý do mà chúng ta nên chưng hoa tươi trong nhà</h4>
+                <img class="images_aside" src="Images/aside_picture_01.jpg" height="100"/>
+                
+                <p>Hoa tươi là một món quà tuyệt vời mà thiên nhiên đã ưu ái ban tặng cho con người chúng ta. Mỗi một loài hoa sẽ mang đến những vẻ đẹp khác nhau cho không gian sống. Ngoài ra thì việc chưng hoa tươi trong nhà còn là bí quyết tạo nên nhiều giá trị và lợi ích khác nhau. Thông tin bài viết dưới đây Hoa Sài Gòn xin được chỉ ra cùng bạn những ý nghĩa khi chưng hoa tươi trong nhà. Cùng tham khảo ngay để hiểu rõ hơn nào... <a href="#">Đọc thêm</a></p>
+            </div>
+            <div class="news">
+                <h4>Bí quyết cắm hoa hồng theo từng vị trí không gian trong ngôi nhà bạn</h4>
+                <img class="images_aside" src="Images/aside_picture_02.jpg" height="100"/>
+                <p>Cắm hoa tưởng chừng như đơn giản thế nhưng nếu như bạn không nắm được các kiến thức quan trọng và cơ bản thì sẽ không thể nào có được những chiếc bình hoa đẹp như mong muốn. Vì vậy trong thông tin bài viết hôm nay Hoa Sài Gòn xin được hướng dẫn cùng bạn bí quyết cắm hoa hồng theo từng vị trí không gian trong ngôi nhà. Chắc chắn rằng bạn sẽ cắm được những bình hoa vô cùng đẹp và ý nghĩa phù hợp với từng vị trí khác nhau trong gia đình... <a href="#">Đọc thêm</a></p>
+            </div>
+            <div class="news">
+                <h4>Hãy ngắm hoa tươi mỗi ngày để giải tỏa stress hiệu quả</h4>
+                <img class="images_aside" src="Images/aside_picture_03.jpg" height = "100"/>
+                <p>Hoa tươi không chỉ mang đến vẻ đẹp cho không gian sống mà nó còn chính là bí quyết giúp con người cảm thấy thoải mái dễ chịu hơn. Trong thông tin bài viết dưới đây Hoa Sài Gòn sẽ giúp bạn hiểu rõ vì sao việc ngắm hoa tươi mỗi ngày lại là liệu pháp giúp giải tỏa những căng thẳng, stress hiệu quả... <a href="#">Đọc thêm</a></p>
+            </div>
+            <div class="news">
+                <h4>3 lý do khiến bạn mê tít và muốn trồng thử sen đá</h4>
+                <img class="images_aside" src="http://cayxinh.vn/wp-content/uploads/2017/12/cach-cham-soc-sen-da_cayxinh-1200x800.jpg" height="100"/>
+                <p>Tại Việt Nam, sen đá được rất nhiều người ưa chuộng và yêu thích bởi đơn giản đây là loài thực vật rất dễ trồng và dễ chăm sóc. Bên cạnh đó, với vẻ đẹp đơn giản nhưng đầy sức hút, sen đá khi trồng riêng lẻ hay trồng kết hợp với các loại cây hay kết hợp với nhiều loại vật liệu khác đều rất đẹp để trang trí trong nhà... <a href="#">Đọc thêm</a></p>
+            </div>
+            <div class="news">
+                <h4>Chống dị ứng phấn hoa mùa xuân với 6 bí quyết đơn giản</h4>
+                <img class="images_aside" src="https://hoasaigon.com.vn/kcfinder/upload2018/images/blog-hoa/ky-thuat-trong-cham-soc-bao-quan-va-trong-hoa/chong-di-ung-phan-hoa-mua-xuan-voi-6-bi-quyet-don-gian-4.jpg" height="100"/>
+                <p>Mùa xuân là mùa của trăm hoa đua nở tạo nên một khung cảnh đẹp tuyệt vời. Thế nhưng bạn biết không có nhiều người trong số chúng ta thì lại bị dị ứng bởi phấn hoa nên cảm thấy khó chịu, hắt hơi liên tục… mỗi khi ngắm nhìn hoa. Vậy thì thông tin bài viết dưới đây Hoa Sài Gòn xin được chia sẻ cùng bạn những bí quyết quan trọng giúp chống tình trạng dị ứng phấn hoa mùa xuân hiệu quả. Cùng tham khảo qua bài viết dưới đây để hiểu rõ hơn bạn nhé!... <a href="#">Đọc thêm</a></p>
+            </div>
+        </aside>
+    </div>
+    
+    <footer class="col-12">
+        <div class="list col-3 col-m-4">
+            <ul>
+                <li>CHÚNG TÔI</li>
+                <li><i class="fa fa-angle-double-right"></i> Giới thiệu</li>
+                <li><i class="fa fa-angle-double-right"></i> Tuyển dụng</li>
+                <li><i class="fa fa-angle-double-right"></i> Tin tức</li>
+                <li><i class="fa fa-angle-double-right"></i> Ưu đãi thành viên</li>
+                <li><i class="fa fa-angle-double-right"></i> Giờ hoạt động</li>
+                <li><i class="fa fa-angle-double-right"></i> Các dịch vụ cung cấp</li>
+            </ul>
+        </div>
+        <div class="list col-3 col-m-4">
+            <ul>
+                <li>CHÍNH SÁCH BÁN HÀNG</li>
+                <li><i class="fa fa-angle-double-right"></i> Thắc mắc và khiếu nại</li>
+                <li><i class="fa fa-angle-double-right"></i> Hướng Dẫn Đặt Hàng</li>
+                <li><i class="fa fa-angle-double-right"></i> Hướng dẫn thanh toán</li>
+                <li><i class="fa fa-angle-double-right"></i> Phí Giao Hàng</li>
+                <li><i class="fa fa-angle-double-right"></i> Chính sách giao hàng</li>
+                <li><i class="fa fa-angle-double-right"></i> Chính sách bảo mật</li>
+            </ul>
+        </div>
+        <div class="list col-3 col-m-4">
+            <ul>
+                <li><img src="Images/logo_giftlove.png" alt="GiftLove" title="GiftLove"></li>
+                <li><i class="fa fa-angle-double-right"></i> Điện thoại: 0163 214 9696 (Zalo)</li>
+                <li><i class="fa fa-angle-double-right"></i> Instagram: trihuynh__</li>
+                <li><i class="fa fa-angle-double-right"></i> Email: trihkse63285@fpt.edu.vn</li>
+                <li><i class="fa fa-angle-double-right"></i> Nhà Riêng : 41/2B Tô Kí P.Trung Mỹ Tây Q.12 TP.HCM</li>
+            </ul>
+        </div>
+        <div class="list col-3 col-m-12">
+            <div class="social_icon">
+                <ul>
+                    <li><a href="https://www.instagram.com/trihuynh_/?hl=en" title="Instagram Giftlove" target="_blank"><img src="Images/ig.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/" title="Fanpage Giftlove"><img src="Images/facebook.png" alt=""></a></li>
+                    <li><a href="https://www.youtube.com/" title="Youtube Giftlove"><img src="Images/youtube.png" alt=""></a></li>
+                    <li><a href="#" title="Messeage"><img src="Images/mes.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>&copy; Copyright 2018 by Shop hoa GiftLove - All rights reserved. Thiết kế web: Huỳnh Kim Trí</p>
+        </footer>
+    </body>
+</html>

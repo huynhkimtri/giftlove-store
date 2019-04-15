@@ -1,0 +1,86 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('../font/Roboto-Light.ttf');
+	src: url('FileName.eot?#iefix') format('embedded-opentype'), url('FileName.woff') format('woff'), url('../font/Roboto-Light.ttf') format('truetype'), url('FileName.svg#FontName') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+header {
+	background-image: url("file:///E:/FPT_Univerity/PRO201/FinalProject/Images/background.png");
+}
+
+body {
+	font-family: 'Roboto';
+}
+
+footer {
+	background-image: url("file:///E:/FPT_Univerity/PRO201/FinalProject/Images/background.png");
+	font-family: 'Roboto';
+}
+
+.table_cart {
+	width: 100%;
+	height: auto;
+}
+
+.table_cart img {
+	width: 100px;
+	height: 100px;
+	border-radius: 20px;
+}
+
+.table_cart td {
+	text-align: center;
+	border-top: 1px solid gray;
+	font-size: 24px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+#sumMoney {
+	top: 0;
+	border-top: 1px solid #535353;
+	margin-top: 0;
+}
+
+#sumMoney h3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	float: right;
+	margin-right: 5%;
+	font-size: 30px;
+}
+
+input[type = number] {
+
+	/* border-radius: 10px; */
+	font-size: 24px;
+	width: 40px;
+	font-family: 'Roboto';
+	text-align: center;
+}
+
+input[type = button] {
+	width: 22%;
+	height: 50px;
+	margin: 20px;
+	color: #fff;
+	padding: 10px;
+	background-color: #f4574c;
+	border-radius: 40px;
+	font-size: 18px;
+	display: inline-block;
+	font-family: 'Roboto';
+}
+
+#div-button {
+	text-align: center;
+}
+input[type = checkbox] {
+	width: 25px;
+	height: 25px;
+}
+

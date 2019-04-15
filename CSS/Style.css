@@ -1,0 +1,567 @@
+@charset "utf-8";
+
+/* CSS Document */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Light.ttf');
+    src: url('FileName.eot?#iefix') format('embedded-opentype'), url('FileName.woff') format('woff'), url('../font/Roboto-Light.ttf') format('truetype'), url('FileName.svg#FontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+html {
+    font-family: 'Roboto', serif;
+    font-size: 22px;
+}
+
+body {
+    width: 100%;
+    margin: auto;    /* background-image: url("Images/background.png");
+                        background-repeat: repeat; */
+
+    /* background-color: #ececec */
+}
+
+::selection {
+    color: #f3f3f3;
+    background: #F66;
+}
+
+::-moz-selection {
+    color: #f3f3f3;
+    background: #F66;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background-image: url("file:///E:/FPT_Univerity/PRO201/FinalProject/Images/background.png");
+}
+
+header img {
+    width: 400px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#images_banner {
+    width: 100%;
+}
+
+.images_trangtri {
+    margin: auto;
+    height: 3em;
+}
+
+#titles {
+
+    /* background-color: red; */
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#titles>a {
+    text-decoration: none;
+    color: #4C4C4C;
+    font-size: 30px;
+    transition: 0.3s;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#title>a:hover {
+    color: #d62317;
+    transform: scale(1.1);
+}
+
+article h2 {
+    text-align: center;
+    color: #d62317;
+    font-weight: bold;
+}
+
+article p.articleContent {
+    width: 90%;
+    color: #333;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+article p.articleContentBottom {
+    font-size: 26px;
+    width: 90%;
+    color: #1838df;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto' serif;
+}
+
+article p.articleContentBottom a {
+    text-decoration: none;
+    color: #d62317;
+}
+
+article .articleColor {
+    background-color: #fff;    /* width: 80%; */
+}
+
+.row {
+    width: 80%;
+    margin: auto;
+}
+
+article iframe {
+    display: block;
+    margin: 50px auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+article.form form {
+    color: #009;
+}
+
+article.form table, tr, td {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+article.form input {
+    height: 30px;
+    width: 240px;
+    font-size: 16px;
+}
+
+article.form td.button, td.button input {
+    text-align: center;
+    width: 100px;
+}
+
+aside {
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+aside div.heading {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    color: #333;
+    padding-top: 30px;
+    font-size: 26px;
+}
+
+aside div.heading a {
+    font-weight: bold;
+    font-size: 26px;
+    text-decoration: none;
+    color: #333;
+}
+
+aside div.news p {
+    font-size: 20px;
+    color: #525252;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+aside .news h4 {
+    font-size: 22px;
+    color: #333;
+}
+
+aside .news .images_aside {
+    width: 150px;
+    height: 100px;
+}
+
+aside div.news p a {
+    text-decoration: none;
+}
+
+footer {
+    background-image: url("file:///E:/FPT_Univerity/PRO201/FinalProject/Images/background.png");
+    clear: both;
+    font-family: 'Roboto';
+    margin-bottom: 0;
+    bottom: 0;
+}
+
+.list col-3 col-m-4 li {
+    list-style-type: none;
+}
+
+article div.store {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background-color: #fff;
+}
+
+
+
+p del {
+    color: #C0C0C0;
+}
+
+img.discount {
+    position: absolute;
+    top: 10%;
+    left: 70%;
+}
+
+div.heading p {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #d62317;
+}
+
+div.news img {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.news p {
+    font-size: 15px;
+    text-align: justify;
+    color: #33C;
+    margin-right: 10px;
+}
+
+div.news {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+div.list li {
+    font-family: 'Roboto';
+    margin: 10px;
+    color: #555;
+    list-style-type: none;
+}
+
+div.list li img {
+    margin-left: 0;
+}
+
+div.list img {
+}
+
+div.bottom {
+    clear: both;
+}
+
+div.bottom p {
+    font-size: 13px;
+    text-align: center;
+    color: #777;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* Form Subcribe Style */
+.form-style {
+    max-width: 450px;
+    background: #FAFAFA;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid #f4574c;
+}
+
+.form-style ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.form-style ul li {
+    display: block;
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+
+.form-style ul li .field-style {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 8px;
+    outline: none;
+    width: 100%;
+    border: 1px solid #f4574c;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.form-style ul li .field-style:focus {
+    box-shadow: 0 0 5px #B0CFE0;
+    border: 1px solid #B0CFE0;
+}
+
+.form-style ul li textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.form-style ul li input[type="button"], .form-style ul li input[type="submit"] {
+    -moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    box-shadow: inset 0px 1px 0px 0px #3985B1;
+    background-color: #216288;
+    border: 1px solid #17445E;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 1px 10px;
+    text-decoration: none;
+    font: 16px 'Roboto', sans-serif;
+    width: 100px;
+}
+
+.form-style ul li input[type="button"]:hover, .form-style ul li input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+    background-color: #28739E;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxx  Form Login Style xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.formContainer input[type = text], input[type = password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1; /* Fix for IE7 */
+    *display: inline; /* Fix for IE7 */
+    border: 1px solid #f44336;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: 'Roboto';
+}
+
+.formContainer button {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.formContainer {
+    border-radius: 10px;    /* border: 6px solid #f4574c; */
+    padding: 16px;
+}
+
+.formContainer button:hover {
+    opacity: 0.8;
+}
+
+.formContainer .cancel_button {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgContainer .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.imgContainer .close:hover, .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.imgContainer {
+    text-align: center;
+    margin: 0px 0 12px 0;
+    position: relative;
+}
+
+img.avatar_login {
+    width: 300px;
+}
+
+.formContainer {
+    
+}
+
+.formContainer span.forget_password {
+    float: right;
+    padding-top: 16px;
+}
+
+.modal_login_form {
+
+    /*background*/
+    display: none; /*hidden by default*/
+    position: fixed; /*keep stay in page*/
+    z-index: 1; /*sit on top*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /*enable scroll if needed*/
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal_login_form_content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 500px;
+}
+
+.modal_login_form .animate {
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width:320px) {
+    .formContainer span.forget_password {
+        display: block;
+        float: none;
+    }
+    img.avatar_login {
+        width: 200px;
+    }
+    .cancel_button {
+        width: 100%;
+    }
+    .modal_login_form_content {
+        width: 80%;
+    }
+
+}
+@media screen and (max-width:425px) {
+    .modal_login_form_content {
+        width: 80%;
+    }
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#popupad {
+
+    /*background*/
+    display: none; /*hidden by default*/
+    position: fixed; /*keep stay in page*/
+    z-index: 1; /*sit on top*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /*enable scroll if needed*/
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+    padding-top: 100px;
+    text-align: center;
+}
+
+#popupad img {
+    animation: animatezoom 0.6s;   /*  width: 70% */
+}
+
+#popupad .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#popupad .close:hover, .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+@media screen and (max-width:425px) {
+    #popupad img {
+        animation: animatezoom 0.6s;
+        width: 90%;
+    }
+
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.content-blog {
+    width: 90%;
+    height: 300px;
+    background-image: url(https://www.hoasaigon.com.vn/timthumb.php?src=upload/images/video.jpg&w=948&h=263&zc=1&a=tc);
+}
+
+.social_icon ul li img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.2s;
+    overflow: hidden;    /* background-color: blue; */
+}
+
+.social_icon ul li img:hover {
+
+    /* width: 60px;
+    height: 60px; */
+    transform: scale(1.2);
+}
+
+.social_icon {
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
